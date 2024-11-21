@@ -4,51 +4,33 @@
   переключая тему
 */
 
-:root.theme_light {
+.page.theme_light {
   --background-image: url("../images/cover-image-light.png");
-  --accent-color: #ff8dcb;
-  --accent-color-opacity: #32312d66;
-  --text-color: #353430;
-  --decoration-color: var(--text-color);
-  --background-color: #fff1f7;
-  --header-color: #ffc2e6;
-
-  --font-family: "IBM Plex Mono", sans-serif;
-  --font-size: 18px;
-  --font-bold: 700;
-  --font-normal: 400;
+  --title-color: #ffc2e6;
+  --accent-color: #ff007066;
+  --text-color: #000028;
+  --dark-color: #353430;
+  --header-color: #353430;
+  --button-color: var(--dark-color);
+  --decoration-color: var(--dark-color);
+  --background-color: var(--accent-color);
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+
+  .page {
     --background-image: url("../images/cover-image-light.png");
-    --accent-color: #ff8dcb;
-    --accent-color-opacity: #32312d66;
-    --text-color: #353430;
-    --background-color: #fff1f7;
-    --header-color: #ffc2e6;
-
-    --font-family: "IBM Plex Mono", sans-serif;
-    --font-size: 18px;
-    --font-bold: 700;
-    --font-normal: 400;
+    --title-color: #ffc2e6;
+    --accent-color: #ff007066;
+    --text-color: #000028;
+    --dark-color: #353430;
+    --header-color: #353430;
+    --button-color: var(--dark-color);
+    --decoration-color: var(--dark-color);
+    --background-color: var(--accent-color);
   }
 
-  .theme_light .rec {
+   .theme_light .rec-icon {
     display: none;
-  }
-
-  .decorated-zone::before {
-    border-inline-end: 1px solid var(--accent-color-opacity);
-    border-block-start: 1px solid var(--accent-color-opacity);
-  }
-
-  .decorated-zone::after {
-    border-inline-start: 1px solid var(--accent-color-opacity);
-    border-block-end: 1px solid var(--accent-color-opacity);
-  }
-
-  .theme_light .content__title {
-    color: var(--dark-color);
   }
 }
