@@ -325,20 +325,14 @@
     margin-block-start: 10px;
   }
 
-  .media-card__image:first-of-type {
-    grid-column: span 2;
-  }
-
-  .media-card__image:nth-of-type(2) {
-    grid-row: span 2;
-  }
-
-  .media-card__image:nth-of-type(3) {
-    grid-row: span 2;
-  }
-
+  .media-card__image:first-of-type,
   .media-card__image:nth-of-type(5) {
     grid-column: span 2;
+  }
+
+  .media-card__image:nth-of-type(2),
+  .media-card__image:nth-of-type(3) {
+    grid-row: span 2;
   }
 
   .footer {
