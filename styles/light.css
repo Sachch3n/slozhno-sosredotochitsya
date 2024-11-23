@@ -16,6 +16,10 @@
   --background-color: var(--accent-color);
 }
 
+.page.theme_light .rec-icon {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
 
   .page {

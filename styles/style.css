@@ -27,24 +27,29 @@
 
 .decorated-zone::before,
 .decorated-zone::after {
+  display: block;
   content: "";
   position: absolute;
-  inline-size: 25px;
-  block-size: 25px;
+  /* inline-size: 25px;
+  block-size: 25px; */
 }
 
 .decorated-zone::before {
   border-inline-end: 1px solid var(--decoration-color);
   border-block-start: 1px solid var(--decoration-color);
-  inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 .decorated-zone::after {
   border-inline-start: 1px solid var(--decoration-color);
   border-block-end: 1px solid var(--decoration-color);
-  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  left: 10px;
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 .rec-icon {
@@ -52,27 +57,28 @@
   position: absolute;
   text-transform: uppercase;
   color: var(--accent-color);
-  top: 10px;
-  right: 18px;
+  top: 12px;
+  right: 38px;
 }
 
 .rec-icon::after {
   content: "";
-  display: inline-block;
-  background-color: var(--accent-color);
-  margin-inline-start: 12px;
-  border-radius: 50%;
-  inline-size: 9px;
-  block-size: 9px;
+  display: block;
+  position: absolute;
   left: 41px;
-  top: 8px;
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  background: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--underline-color);
+  border-radius: 50%;
 }
 
-.rec-icon::before {
+/* .rec-icon::before {
   content: "";
+  position: absolute;
   line-height: 26px;
-}
+} */
 
 .header__theme-menu-list {
   display: flex;
@@ -101,7 +107,8 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--button-color);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color / 0.4);
 }
 
 .header__theme-menu-button:focus {
@@ -277,8 +284,18 @@
   }
 
   .rec-icon {
-    top: 19px;
-    right: 30px;
+    top: 22px;
+    right: 48px;
+  }
+
+  .decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
   }
 
   .header__title {
@@ -317,7 +334,7 @@
 
   .section--attention {
     display: grid;
-    margin-block-start: 256px;
+    margin-block-start: -40px;
     grid-template-columns: minmax(236px, 315px) minmax(472px, 649px);
     gap: 20px;
   }
@@ -411,7 +428,7 @@
 
   .section--attention {
     display: grid;
-    margin-block-start: 162px;
+    margin-block-start: -40px;
     grid-template-columns: minmax(236px, 315px) minmax(472px, 649px);
     gap: 20px;
   }
