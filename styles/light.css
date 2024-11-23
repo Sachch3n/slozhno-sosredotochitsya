@@ -30,7 +30,7 @@
     --background-color: var(--accent-color);
   }
 
-   .theme_light .rec-icon {
+  .rec-icon {
     display: none;
   }
 }

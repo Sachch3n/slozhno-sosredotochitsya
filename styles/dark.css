@@ -25,3 +25,7 @@
   --font-bold: 700;
   --font-normal: 400;
 }
+
+.theme_dark .rec-icon {
+  display: block;
+}
