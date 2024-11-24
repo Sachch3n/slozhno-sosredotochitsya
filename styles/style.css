@@ -95,7 +95,7 @@
   min-inline-size: 4.375rem;
   padding: 2px 13px 4px;
   appearance: none;
-  background: transparent;
+  background-color: transparent;
   border: 1px solid transparent;
   color: var(--button-color);
   cursor: pointer;
@@ -107,8 +107,7 @@
 }
 
 .header__theme-menu-button:hover {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color / 0.4);
+  border: 1px solid var(--button-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -383,6 +382,7 @@
   }
 
   .header__title {
+    text-shadow: 4px 4px 0 var(--text-shadow);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -419,6 +419,7 @@
   }
 
   .footer__title {
+    text-shadow: 4px 4px 0 var(--text-shadow);
     font-size: clamp(7.5rem, 5.2934rem + 9.4148vw, 9.8125rem);
   }
 

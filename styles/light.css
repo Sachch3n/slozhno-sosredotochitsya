@@ -7,10 +7,12 @@
 .page.theme_light {
   --background-image: url("../images/cover-image-light.png");
   --title-color: #ffc2e6;
-  --accent-color: #ff007066;
+  --accent-color: rgba(255, 0, 112, 0.4);
   --text-color: #000028;
   --dark-color: #353430;
-  --header-color: #353430;
+  --text-shadow: #ff0070;
+  --header-color: var(--dark-color);
+  --button-hover: rgba(50, 49, 45, 0.4);
   --button-color: var(--dark-color);
   --decoration-color: var(--dark-color);
   --background-color: var(--accent-color);
@@ -23,15 +25,17 @@
 @media (prefers-color-scheme: light) {
 
   .page {
-    --background-image: url("../images/cover-image-light.png");
-    --title-color: #ffc2e6;
-    --accent-color: #ff007066;
-    --text-color: #000028;
-    --dark-color: #353430;
-    --header-color: #353430;
-    --button-color: var(--dark-color);
-    --decoration-color: var(--dark-color);
-    --background-color: var(--accent-color);
+  --background-image: url("../images/cover-image-light.png");
+  --title-color: #ffc2e6;
+  --accent-color: rgba(255, 0, 112, 0.4);
+  --text-color: var(--dark-color);
+  --dark-color: #353430;
+  --text-shadow: #ff0070;
+  --header-color: var(--dark-color);
+  --button-hover: rgba(50, 49, 45, 0.4);
+  --button-color: var(--dark-color);
+  --decoration-color: var(--dark-color);
+  --background-color: var(--accent-color);
   }
 
   .rec-icon {
